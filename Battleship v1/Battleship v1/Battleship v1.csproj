@@ -53,8 +53,20 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Grid.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectShips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectShips.Designer.cs">
+      <DependentUpon>SelectShips.cs</DependentUpon>
+    </Compile>
     <Compile Include="Username.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +89,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectShips.resx">
+      <DependentUpon>SelectShips.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Username.resx">
       <DependentUpon>Username.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,12 +104,46 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DV3_Battleship.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DV3_Battleship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matrixes\m1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matrixes\m2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matrixes\m3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username\username.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\409ffa3ea82b8106d646785c68902bb8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

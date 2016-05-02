@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,51 +22,72 @@ namespace Battleship_v1
         int compCounter = 0;
         int timer = 0;
         bool finished;
+        bool exited = false;
         public Form1()
         {
-            StartPosition = FormStartPosition.CenterScreen;
-            InitializeComponent();
-            for (int i = 1; i < 9; i++)
+            bool close = false;
+            bool save = false;
+            Home form = new Home();
+            if (form.ShowDialog() == DialogResult.OK){}
+            else
             {
-                for (int j = 1; j < 9; j++)
-                {
-                    fields.Add(i + "" + j);
-                }
+                close = true;
             }
-            string text = System.IO.File.ReadAllText(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\username\username.txt");
-            if (text.Length == 0)
+            if (!close)
             {
+                comp = new Grid(user.getM());
+                StartPosition = FormStartPosition.CenterScreen;
+                InitializeComponent();
+                for (int i = 1; i < 9; i++)
+                {
+                    for (int j = 1; j < 9; j++)
+                    {
+                        fields.Add(i + "" + j);
+                    }
+                }
                 Username popup = new Username();
                 if (popup.ShowDialog() == DialogResult.OK)
                 {
                     username.Text = popup.getUsername();
                     if (popup.getSave())
                     {
-                        System.IO.File.WriteAllText(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\username\username.txt", popup.getUsername());
+                        save = true;
                     }
                 }
+                if (save)
+                {
+                    File.AppendAllText("..\\..\\Resources\\username\\pending.txt", username.Text);
+                }
+                SelectShips shipForm = new SelectShips();
+                if (shipForm.ShowDialog() == DialogResult.OK)
+                {
+                    user = shipForm.getUser();
+                }
+                computer.Text = "Computer";
+                finished = false;
+                for (int i = 1; i < 9; i++)
+                {
+                    for (int j = 1; j < 9; j++)
+                    {
+                        if (user.get(i, j) != 0)
+                        {
+                            Button button = (Button)this.Controls.Find("u" + i + "" + j, true).FirstOrDefault();
+                            button.Image = System.Drawing.Image.FromFile(@"..\..\Resources\o.jpg");
+                        }
+                    }
+                }
+                turnBox.Text = username.Text + "'s turn";
+                timer1.Start();
             }
             else
             {
-                username.Text = text;
+                this.Shown += new EventHandler(MyForm_CloseOnStart);
             }
-            computer.Text = "Computer";
-            finished = false;
-            for (int i = 1; i < 9; i++)
-            {
-                for (int j = 1; j < 9; j++)
-                {
-                    if(user.get(i,j)!=0)
-                    {
-                        Button button = (Button)this.Controls.Find("u" + i + "" + j, true).FirstOrDefault();
-                        button.Image = System.Drawing.Image.FromFile(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\o.jpg");
-                    }
-                }
-            }
-            turnBox.Text = username.Text + "'s turn";
-            timer1.Start();
         }
-
+        private void MyForm_CloseOnStart(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void comGridField_Hit(object sender, EventArgs e)
         {
             if(!finished)
@@ -77,7 +99,7 @@ namespace Battleship_v1
                 j = Convert.ToInt16(name) % 10;
                 if (comp.get(i, j) == 0)
                 {
-                    button.Image = System.Drawing.Image.FromFile(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\x.jpg");
+                    button.Image = System.Drawing.Image.FromFile(@"..\..\Resources\x.jpg");
                     button.Enabled = false;
                     turnBox.ResetText();
                     turnBox.AppendText("Computer's turn");
@@ -86,7 +108,7 @@ namespace Battleship_v1
                 }
                 else
                 {
-                    button.Image = System.Drawing.Image.FromFile(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\texture.jpg");
+                    button.Image = System.Drawing.Image.FromFile(@"..\..\Resources\texture.jpg");
                     button.Enabled = false;
                     userCounter++;
                     if (userCounter == 14)
@@ -112,14 +134,14 @@ namespace Battleship_v1
                 j = Convert.ToInt16(name) % 10;
                 if (user.get(i, j) == 0)
                 {
-                    button.Image = System.Drawing.Image.FromFile(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\x.jpg");
+                    button.Image = System.Drawing.Image.FromFile(@"..\..\Resources\x.jpg");
                     button.Enabled = false;
                     turnBox.Text = username.Text + "'s turn";
                 }
                 else
                 {
                     destroyed.Add(i + "" + j);
-                    button.Image = System.Drawing.Image.FromFile(@"C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\Resources\texture.jpg");
+                    button.Image = System.Drawing.Image.FromFile(@"..\..\Resources\texture.jpg");
                     button.Enabled = false;
                     compCounter++;
                     if (compCounter == 14)

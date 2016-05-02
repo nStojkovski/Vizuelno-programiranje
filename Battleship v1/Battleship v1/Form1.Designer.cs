@@ -2081,6 +2081,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(723, 542);
+            this.MinimumSize = new System.Drawing.Size(723, 542);
             this.Name = "Form1";
             this.Text = "Battleship";
             this.groupBox1.ResumeLayout(false);

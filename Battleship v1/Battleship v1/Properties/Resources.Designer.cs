@@ -63,9 +63,176 @@ namespace Battleship_v1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _409ffa3ea82b8106d646785c68902bb8 {
+            get {
+                object obj = ResourceManager.GetObject("409ffa3ea82b8106d646785c68902bb8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon DV3_Battleship {
+            get {
+                object obj = ResourceManager.GetObject("DV3_Battleship", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DV3_Battleship1 {
+            get {
+                object obj = ResourceManager.GetObject("DV3_Battleship1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DV3_Battleship2 {
+            get {
+                object obj = ResourceManager.GetObject("DV3_Battleship2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon DV3_Battleship3 {
+            get {
+                object obj = ResourceManager.GetObject("DV3_Battleship3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0 0 0 2 0 0 0 0
+        ///0 0 0 2 0 0 0 0
+        ///3 3 3 0 0 0 0 0
+        ///0 0 0 0 0 0 4 0
+        ///0 0 0 0 0 0 4 0
+        ///0 0 0 0 0 0 4 0
+        ///5 5 5 5 5 0 4 0
+        ///0 0 0 0 0 0 0 0.
+        /// </summary>
+        internal static string m1 {
+            get {
+                return ResourceManager.GetString("m1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 2 0 0 0 0 0 0
+        ///0 0 0 0 0 4 0 0
+        ///0 0 0 3 0 4 0 0
+        ///0 0 0 3 0 4 0 0
+        ///0 0 0 3 0 4 0 0
+        ///0 0 0 0 0 0 0 0
+        ///0 5 5 5 5 5 0 0
+        ///0 0 0 0 0 0 0 0.
+        /// </summary>
+        internal static string m2 {
+            get {
+                return ResourceManager.GetString("m2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0 0 0 0 0 0 0 0
+        ///0 2 2 0 0 0 0 0
+        ///0 0 0 0 0 0 0 0
+        ///0 5 5 5 5 5 0 0
+        ///0 0 0 0 0 0 0 0
+        ///3 0 4 4 4 4 0 0
+        ///3 0 0 0 0 0 0 0
+        ///3 0 0 0 0 0 0 0.
+        /// </summary>
+        internal static string m3 {
+            get {
+                return ResourceManager.GetString("m3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o {
+            get {
+                object obj = ResourceManager.GetObject("o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap texture {
             get {
                 object obj = ResourceManager.GetObject("texture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap texture1 {
+            get {
+                object obj = ResourceManager.GetObject("texture1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap texture2 {
+            get {
+                object obj = ResourceManager.GetObject("texture2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Thumbs {
+            get {
+                object obj = ResourceManager.GetObject("Thumbs", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string username {
+            get {
+                return ResourceManager.GetString("username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x {
+            get {
+                object obj = ResourceManager.GetObject("x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

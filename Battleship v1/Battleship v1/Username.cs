@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,21 @@ namespace Battleship_v1
             StartPosition = FormStartPosition.CenterScreen;
             test = false;
             InitializeComponent();
+            string content = File.ReadAllText("..\\..\\Resources\\username\\pending.txt");
+            System.IO.File.WriteAllText("..\\..\\Resources\\username\\pending.txt", string.Empty);
+            File.AppendAllText("..\\..\\Resources\\username\\username.txt", content + Environment.NewLine);
+            PopulateList("..\\..\\Resources\\username\\username.txt");
+            rbVnesi.Checked = true;
+            listBox1.Enabled = false;
+        }
+        private void PopulateList(string filePath)
+        {
+            string line;
+            var file = new System.IO.StreamReader(filePath);
+            while ((line = file.ReadLine()) != null)
+            {
+                listBox1.Items.Add(line);
+            }
         }
         public string getUsername()
         {
@@ -42,23 +58,42 @@ namespace Battleship_v1
         }
         private void OK_Click(object sender, EventArgs e)
         {
-            if (test)
+            if(rbVnesi.Checked)
             {
-                username = usernameTB.Text;
-                save = saveUsername.Checked;
+                if (test)
+                {
+                    username = usernameTB.Text;
+                    save = saveUsername.Checked;
+                    this.DialogResult = DialogResult.OK;
+                }
+            }
+            else
+            {
+                username = listBox1.SelectedItem.ToString();
+                save = false;
                 this.DialogResult = DialogResult.OK;
-                Close();
             }
         }
         private void usernameTB_Validating(object sender, CancelEventArgs s)
         {
-            if (usernameTB.Text.Trim().Length == 0)
+            if (rbVnesi.Checked)
             {
-                err.SetError(usernameTB, "Please enter your username!");
+                if (usernameTB.Text.Trim().Length == 0)
+                {
+                    err.SetError(usernameTB, "Внесете го вашето корисничко име!");
+                }
+                else if (listBox1.Items.Contains(usernameTB.Text.Trim()))
+                {
+                    err.SetError(usernameTB, "Корисничкото име постои!");
+                }
+                else
+                {
+                    test = true;
+                    err.SetError(usernameTB, null);
+                }
             }
             else
             {
-                test = true;
                 err.SetError(usernameTB, null);
             }
         }
@@ -68,6 +103,29 @@ namespace Battleship_v1
             if (e.KeyCode == Keys.Enter)
             {
                 OK.PerformClick();
+            }
+        }
+
+        private void rbVnesi_CheckedChanged(object sender, EventArgs e)
+        {
+            if(listBox1.Enabled)
+            {
+                listBox1.Enabled = false;
+                usernameTB.Enabled = true;
+                saveUsername.Enabled = true;
+                OK.CausesValidation = true;
+            }
+        }
+
+        private void rbIzberi_CheckedChanged(object sender, EventArgs e)
+        {
+            if(usernameTB.Enabled)
+            {
+                usernameTB.Enabled = false;
+                saveUsername.Enabled = false;
+                listBox1.Enabled = true;
+                listBox1.SelectedIndex = 0;
+                OK.CausesValidation = false;
             }
         }
     }
