@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Username));
             this.usernameTB = new System.Windows.Forms.TextBox();
             this.OK = new System.Windows.Forms.Button();
             this.saveUsername = new System.Windows.Forms.CheckBox();
@@ -47,7 +48,7 @@
             // 
             // OK
             // 
-            this.OK.Location = new System.Drawing.Point(139, 144);
+            this.OK.Location = new System.Drawing.Point(303, 142);
             this.OK.Name = "OK";
             this.OK.Size = new System.Drawing.Size(126, 23);
             this.OK.TabIndex = 2;
@@ -58,12 +59,14 @@
             // saveUsername
             // 
             this.saveUsername.AutoSize = true;
+            this.saveUsername.BackColor = System.Drawing.Color.Transparent;
+            this.saveUsername.CausesValidation = false;
             this.saveUsername.Location = new System.Drawing.Point(24, 74);
             this.saveUsername.Name = "saveUsername";
             this.saveUsername.Size = new System.Drawing.Size(71, 17);
             this.saveUsername.TabIndex = 3;
             this.saveUsername.Text = "Запомни";
-            this.saveUsername.UseVisualStyleBackColor = true;
+            this.saveUsername.UseVisualStyleBackColor = false;
             // 
             // listBox1
             // 
@@ -77,6 +80,7 @@
             // rbVnesi
             // 
             this.rbVnesi.AutoSize = true;
+            this.rbVnesi.BackColor = System.Drawing.Color.Transparent;
             this.rbVnesi.CausesValidation = false;
             this.rbVnesi.Location = new System.Drawing.Point(24, 25);
             this.rbVnesi.Name = "rbVnesi";
@@ -84,26 +88,29 @@
             this.rbVnesi.TabIndex = 6;
             this.rbVnesi.TabStop = true;
             this.rbVnesi.Text = "Внеси корисничко име:";
-            this.rbVnesi.UseVisualStyleBackColor = true;
+            this.rbVnesi.UseVisualStyleBackColor = false;
             this.rbVnesi.CheckedChanged += new System.EventHandler(this.rbVnesi_CheckedChanged);
             // 
             // rbIzberi
             // 
             this.rbIzberi.AutoSize = true;
+            this.rbIzberi.BackColor = System.Drawing.Color.Transparent;
             this.rbIzberi.CausesValidation = false;
             this.rbIzberi.Location = new System.Drawing.Point(232, 25);
             this.rbIzberi.Name = "rbIzberi";
-            this.rbIzberi.Size = new System.Drawing.Size(206, 17);
+            this.rbIzberi.Size = new System.Drawing.Size(200, 17);
             this.rbIzberi.TabIndex = 7;
             this.rbIzberi.TabStop = true;
-            this.rbIzberi.Text = "Избери постоечко корисничко име:";
-            this.rbIzberi.UseVisualStyleBackColor = true;
+            this.rbIzberi.Text = "Избери зачувано корисничко име:";
+            this.rbIzberi.UseVisualStyleBackColor = false;
             this.rbIzberi.CheckedChanged += new System.EventHandler(this.rbIzberi_CheckedChanged);
             // 
             // Username
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = global::Battleship_v1.Properties.Resources.background_username;
             this.ClientSize = new System.Drawing.Size(441, 177);
             this.Controls.Add(this.rbIzberi);
             this.Controls.Add(this.rbVnesi);
@@ -111,8 +118,11 @@
             this.Controls.Add(this.saveUsername);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.usernameTB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(457, 215);
+            this.MinimumSize = new System.Drawing.Size(457, 215);
             this.Name = "Username";
-            this.Text = "Username";
+            this.Text = "Корисничко име";
             this.ResumeLayout(false);
             this.PerformLayout();
 

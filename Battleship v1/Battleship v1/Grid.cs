@@ -87,8 +87,25 @@ namespace Battleship_v1
                 }
             }
         }
+        public Grid (string s)
+        {
+            grid = new int[8, 8];
+            String input = File.ReadAllText(@"..\..\Resources\saved-game\" + s + ".txt");
+            int i = 0, j = 0;
+            foreach (var row in input.Split('\n'))
+            {
+                j = 0;
+                foreach (var col in row.Trim().Split(' '))
+                {
+                    grid[i, j] = int.Parse(col.Trim());
+                    j++;
+                }
+                i++;
+            }
+        }
         public int get (int i, int j)
         {
+            if (i > 8 || j > 8) return 99;
             return grid[i-1,j-1];
         }
         public void set(int i, int j, int val)
@@ -98,6 +115,30 @@ namespace Battleship_v1
         public int getM ()
         {
             return m;
+        }
+        public void resetGrid()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    grid[i, j] = 0;
+                }
+            }
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i=0; i<8; i++)
+            {
+                for (int j=0; j<8; j++)
+                {
+                    if (j != 7) sb.Append(grid[i, j] + " ");
+                    else sb.Append(grid[i, j]);
+                }
+                if (i!=7) sb.Append(Environment.NewLine);
+            }
+            return sb.ToString();
         }
 
     }

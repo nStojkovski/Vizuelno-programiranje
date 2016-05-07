@@ -34,7 +34,7 @@ namespace Battleship_v1
             InitializeComponent();
             string content = File.ReadAllText("..\\..\\Resources\\username\\pending.txt");
             System.IO.File.WriteAllText("..\\..\\Resources\\username\\pending.txt", string.Empty);
-            File.AppendAllText("..\\..\\Resources\\username\\username.txt", content + Environment.NewLine);
+            if(content.Length != 0) File.AppendAllText("..\\..\\Resources\\username\\username.txt", content + Environment.NewLine);
             PopulateList("..\\..\\Resources\\username\\username.txt");
             rbVnesi.Checked = true;
             listBox1.Enabled = false;

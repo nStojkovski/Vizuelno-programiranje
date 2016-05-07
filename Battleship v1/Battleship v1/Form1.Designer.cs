@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -198,22 +197,16 @@
             this.turnBox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerBox = new System.Windows.Forms.TextBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.resetButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(199, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BATTLESHIP";
-            // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label16);
@@ -303,144 +296,176 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label14.Location = new System.Drawing.Point(7, 285);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(13, 13);
+            this.label14.Size = new System.Drawing.Size(14, 13);
             this.label14.TabIndex = 78;
             this.label14.Text = "8";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label15.Location = new System.Drawing.Point(7, 250);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
+            this.label15.Size = new System.Drawing.Size(14, 13);
             this.label15.TabIndex = 77;
             this.label15.Text = "7";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label16.Location = new System.Drawing.Point(7, 215);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
+            this.label16.Size = new System.Drawing.Size(14, 13);
             this.label16.TabIndex = 76;
             this.label16.Text = "6";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label17.Location = new System.Drawing.Point(7, 180);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(13, 13);
+            this.label17.Size = new System.Drawing.Size(14, 13);
             this.label17.TabIndex = 75;
             this.label17.Text = "5";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label13.Location = new System.Drawing.Point(7, 145);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
+            this.label13.Size = new System.Drawing.Size(14, 13);
             this.label13.TabIndex = 74;
             this.label13.Text = "4";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Location = new System.Drawing.Point(7, 110);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(13, 13);
+            this.label12.Size = new System.Drawing.Size(14, 13);
             this.label12.TabIndex = 73;
             this.label12.Text = "3";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(7, 75);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
+            this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 72;
             this.label11.Text = "2";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Location = new System.Drawing.Point(7, 40);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.Size = new System.Drawing.Size(14, 13);
             this.label10.TabIndex = 71;
             this.label10.Text = "1";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Location = new System.Drawing.Point(276, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.Size = new System.Drawing.Size(14, 13);
             this.label9.TabIndex = 70;
             this.label9.Text = "8";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(241, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 69;
             this.label8.Text = "7";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(208, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
+            this.label5.Size = new System.Drawing.Size(14, 13);
             this.label5.TabIndex = 68;
             this.label5.Text = "6";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Location = new System.Drawing.Point(172, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.Size = new System.Drawing.Size(14, 13);
             this.label6.TabIndex = 67;
             this.label6.Text = "5";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(137, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.Size = new System.Drawing.Size(14, 13);
             this.label7.TabIndex = 66;
             this.label7.Text = "4";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(101, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.Size = new System.Drawing.Size(14, 13);
             this.label4.TabIndex = 65;
             this.label4.Text = "3";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(65, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.Size = new System.Drawing.Size(14, 13);
             this.label3.TabIndex = 64;
             this.label3.Text = "2";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(30, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.Size = new System.Drawing.Size(14, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "1";
             // 
@@ -1150,6 +1175,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label20);
@@ -1239,792 +1265,888 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label18.Location = new System.Drawing.Point(7, 285);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(13, 13);
+            this.label18.Size = new System.Drawing.Size(14, 13);
             this.label18.TabIndex = 78;
             this.label18.Text = "8";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label19.Location = new System.Drawing.Point(7, 250);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(13, 13);
+            this.label19.Size = new System.Drawing.Size(14, 13);
             this.label19.TabIndex = 77;
             this.label19.Text = "7";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label20.Location = new System.Drawing.Point(7, 215);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(13, 13);
+            this.label20.Size = new System.Drawing.Size(14, 13);
             this.label20.TabIndex = 76;
             this.label20.Text = "6";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label21.Location = new System.Drawing.Point(7, 180);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(13, 13);
+            this.label21.Size = new System.Drawing.Size(14, 13);
             this.label21.TabIndex = 75;
             this.label21.Text = "5";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label22.Location = new System.Drawing.Point(7, 145);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(13, 13);
+            this.label22.Size = new System.Drawing.Size(14, 13);
             this.label22.TabIndex = 74;
             this.label22.Text = "4";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label23.Location = new System.Drawing.Point(7, 110);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(13, 13);
+            this.label23.Size = new System.Drawing.Size(14, 13);
             this.label23.TabIndex = 73;
             this.label23.Text = "3";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label24.Location = new System.Drawing.Point(7, 75);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(13, 13);
+            this.label24.Size = new System.Drawing.Size(14, 13);
             this.label24.TabIndex = 72;
             this.label24.Text = "2";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label25.Location = new System.Drawing.Point(7, 40);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(13, 13);
+            this.label25.Size = new System.Drawing.Size(14, 13);
             this.label25.TabIndex = 71;
             this.label25.Text = "1";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label26.Location = new System.Drawing.Point(276, 16);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(13, 13);
+            this.label26.Size = new System.Drawing.Size(14, 13);
             this.label26.TabIndex = 70;
             this.label26.Text = "8";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label27.Location = new System.Drawing.Point(241, 16);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(13, 13);
+            this.label27.Size = new System.Drawing.Size(14, 13);
             this.label27.TabIndex = 69;
             this.label27.Text = "7";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label28.Location = new System.Drawing.Point(208, 16);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(13, 13);
+            this.label28.Size = new System.Drawing.Size(14, 13);
             this.label28.TabIndex = 68;
             this.label28.Text = "6";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label29.Location = new System.Drawing.Point(172, 16);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(13, 13);
+            this.label29.Size = new System.Drawing.Size(14, 13);
             this.label29.TabIndex = 67;
             this.label29.Text = "5";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label30.Location = new System.Drawing.Point(137, 16);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(13, 13);
+            this.label30.Size = new System.Drawing.Size(14, 13);
             this.label30.TabIndex = 66;
             this.label30.Text = "4";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label31.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label31.Location = new System.Drawing.Point(101, 16);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(13, 13);
+            this.label31.Size = new System.Drawing.Size(14, 13);
             this.label31.TabIndex = 65;
             this.label31.Text = "3";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label32.Location = new System.Drawing.Point(65, 16);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(13, 13);
+            this.label32.Size = new System.Drawing.Size(14, 13);
             this.label32.TabIndex = 64;
             this.label32.Text = "2";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label33.Location = new System.Drawing.Point(30, 16);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(13, 13);
+            this.label33.Size = new System.Drawing.Size(14, 13);
             this.label33.TabIndex = 2;
             this.label33.Text = "1";
             // 
             // c88
             // 
+            this.c88.BackColor = System.Drawing.Color.LightBlue;
             this.c88.Location = new System.Drawing.Point(265, 274);
             this.c88.Margin = new System.Windows.Forms.Padding(0);
             this.c88.Name = "c88";
             this.c88.Size = new System.Drawing.Size(35, 35);
             this.c88.TabIndex = 63;
-            this.c88.UseVisualStyleBackColor = true;
+            this.c88.UseVisualStyleBackColor = false;
             this.c88.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c87
             // 
+            this.c87.BackColor = System.Drawing.Color.LightBlue;
             this.c87.Location = new System.Drawing.Point(230, 274);
             this.c87.Margin = new System.Windows.Forms.Padding(0);
             this.c87.Name = "c87";
             this.c87.Size = new System.Drawing.Size(35, 35);
             this.c87.TabIndex = 62;
-            this.c87.UseVisualStyleBackColor = true;
+            this.c87.UseVisualStyleBackColor = false;
             this.c87.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c86
             // 
+            this.c86.BackColor = System.Drawing.Color.LightBlue;
             this.c86.Location = new System.Drawing.Point(195, 274);
             this.c86.Margin = new System.Windows.Forms.Padding(0);
             this.c86.Name = "c86";
             this.c86.Size = new System.Drawing.Size(35, 35);
             this.c86.TabIndex = 61;
-            this.c86.UseVisualStyleBackColor = true;
+            this.c86.UseVisualStyleBackColor = false;
             this.c86.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c85
             // 
+            this.c85.BackColor = System.Drawing.Color.LightBlue;
             this.c85.Location = new System.Drawing.Point(160, 274);
             this.c85.Margin = new System.Windows.Forms.Padding(0);
             this.c85.Name = "c85";
             this.c85.Size = new System.Drawing.Size(35, 35);
             this.c85.TabIndex = 60;
-            this.c85.UseVisualStyleBackColor = true;
+            this.c85.UseVisualStyleBackColor = false;
             this.c85.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c84
             // 
+            this.c84.BackColor = System.Drawing.Color.LightBlue;
             this.c84.Location = new System.Drawing.Point(125, 274);
             this.c84.Margin = new System.Windows.Forms.Padding(0);
             this.c84.Name = "c84";
             this.c84.Size = new System.Drawing.Size(35, 35);
             this.c84.TabIndex = 59;
-            this.c84.UseVisualStyleBackColor = true;
+            this.c84.UseVisualStyleBackColor = false;
             this.c84.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c83
             // 
+            this.c83.BackColor = System.Drawing.Color.LightBlue;
             this.c83.Location = new System.Drawing.Point(90, 274);
             this.c83.Margin = new System.Windows.Forms.Padding(0);
             this.c83.Name = "c83";
             this.c83.Size = new System.Drawing.Size(35, 35);
             this.c83.TabIndex = 58;
-            this.c83.UseVisualStyleBackColor = true;
+            this.c83.UseVisualStyleBackColor = false;
             this.c83.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c82
             // 
+            this.c82.BackColor = System.Drawing.Color.LightBlue;
             this.c82.Location = new System.Drawing.Point(55, 274);
             this.c82.Margin = new System.Windows.Forms.Padding(0);
             this.c82.Name = "c82";
             this.c82.Size = new System.Drawing.Size(35, 35);
             this.c82.TabIndex = 57;
-            this.c82.UseVisualStyleBackColor = true;
+            this.c82.UseVisualStyleBackColor = false;
             this.c82.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c81
             // 
+            this.c81.BackColor = System.Drawing.Color.LightBlue;
             this.c81.Location = new System.Drawing.Point(20, 274);
             this.c81.Margin = new System.Windows.Forms.Padding(0);
             this.c81.Name = "c81";
             this.c81.Size = new System.Drawing.Size(35, 35);
             this.c81.TabIndex = 56;
-            this.c81.UseVisualStyleBackColor = true;
+            this.c81.UseVisualStyleBackColor = false;
             this.c81.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c78
             // 
+            this.c78.BackColor = System.Drawing.Color.LightBlue;
             this.c78.Location = new System.Drawing.Point(265, 239);
             this.c78.Margin = new System.Windows.Forms.Padding(0);
             this.c78.Name = "c78";
             this.c78.Size = new System.Drawing.Size(35, 35);
             this.c78.TabIndex = 55;
-            this.c78.UseVisualStyleBackColor = true;
+            this.c78.UseVisualStyleBackColor = false;
             this.c78.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c77
             // 
+            this.c77.BackColor = System.Drawing.Color.LightBlue;
             this.c77.Location = new System.Drawing.Point(230, 239);
             this.c77.Margin = new System.Windows.Forms.Padding(0);
             this.c77.Name = "c77";
             this.c77.Size = new System.Drawing.Size(35, 35);
             this.c77.TabIndex = 54;
-            this.c77.UseVisualStyleBackColor = true;
+            this.c77.UseVisualStyleBackColor = false;
             this.c77.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c76
             // 
+            this.c76.BackColor = System.Drawing.Color.LightBlue;
             this.c76.Location = new System.Drawing.Point(195, 239);
             this.c76.Margin = new System.Windows.Forms.Padding(0);
             this.c76.Name = "c76";
             this.c76.Size = new System.Drawing.Size(35, 35);
             this.c76.TabIndex = 53;
-            this.c76.UseVisualStyleBackColor = true;
+            this.c76.UseVisualStyleBackColor = false;
             this.c76.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c75
             // 
+            this.c75.BackColor = System.Drawing.Color.LightBlue;
             this.c75.Location = new System.Drawing.Point(160, 239);
             this.c75.Margin = new System.Windows.Forms.Padding(0);
             this.c75.Name = "c75";
             this.c75.Size = new System.Drawing.Size(35, 35);
             this.c75.TabIndex = 52;
-            this.c75.UseVisualStyleBackColor = true;
+            this.c75.UseVisualStyleBackColor = false;
             this.c75.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c74
             // 
+            this.c74.BackColor = System.Drawing.Color.LightBlue;
             this.c74.Location = new System.Drawing.Point(125, 239);
             this.c74.Margin = new System.Windows.Forms.Padding(0);
             this.c74.Name = "c74";
             this.c74.Size = new System.Drawing.Size(35, 35);
             this.c74.TabIndex = 51;
-            this.c74.UseVisualStyleBackColor = true;
+            this.c74.UseVisualStyleBackColor = false;
             this.c74.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c73
             // 
+            this.c73.BackColor = System.Drawing.Color.LightBlue;
             this.c73.Location = new System.Drawing.Point(90, 239);
             this.c73.Margin = new System.Windows.Forms.Padding(0);
             this.c73.Name = "c73";
             this.c73.Size = new System.Drawing.Size(35, 35);
             this.c73.TabIndex = 50;
-            this.c73.UseVisualStyleBackColor = true;
+            this.c73.UseVisualStyleBackColor = false;
             this.c73.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c72
             // 
+            this.c72.BackColor = System.Drawing.Color.LightBlue;
             this.c72.Location = new System.Drawing.Point(55, 239);
             this.c72.Margin = new System.Windows.Forms.Padding(0);
             this.c72.Name = "c72";
             this.c72.Size = new System.Drawing.Size(35, 35);
             this.c72.TabIndex = 49;
-            this.c72.UseVisualStyleBackColor = true;
+            this.c72.UseVisualStyleBackColor = false;
             this.c72.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c71
             // 
+            this.c71.BackColor = System.Drawing.Color.LightBlue;
             this.c71.Location = new System.Drawing.Point(20, 239);
             this.c71.Margin = new System.Windows.Forms.Padding(0);
             this.c71.Name = "c71";
             this.c71.Size = new System.Drawing.Size(35, 35);
             this.c71.TabIndex = 48;
-            this.c71.UseVisualStyleBackColor = true;
+            this.c71.UseVisualStyleBackColor = false;
             this.c71.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c68
             // 
+            this.c68.BackColor = System.Drawing.Color.LightBlue;
             this.c68.Location = new System.Drawing.Point(265, 204);
             this.c68.Margin = new System.Windows.Forms.Padding(0);
             this.c68.Name = "c68";
             this.c68.Size = new System.Drawing.Size(35, 35);
             this.c68.TabIndex = 47;
-            this.c68.UseVisualStyleBackColor = true;
+            this.c68.UseVisualStyleBackColor = false;
             this.c68.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c67
             // 
+            this.c67.BackColor = System.Drawing.Color.LightBlue;
             this.c67.Location = new System.Drawing.Point(230, 204);
             this.c67.Margin = new System.Windows.Forms.Padding(0);
             this.c67.Name = "c67";
             this.c67.Size = new System.Drawing.Size(35, 35);
             this.c67.TabIndex = 46;
-            this.c67.UseVisualStyleBackColor = true;
+            this.c67.UseVisualStyleBackColor = false;
             this.c67.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c66
             // 
+            this.c66.BackColor = System.Drawing.Color.LightBlue;
             this.c66.Location = new System.Drawing.Point(195, 204);
             this.c66.Margin = new System.Windows.Forms.Padding(0);
             this.c66.Name = "c66";
             this.c66.Size = new System.Drawing.Size(35, 35);
             this.c66.TabIndex = 45;
-            this.c66.UseVisualStyleBackColor = true;
+            this.c66.UseVisualStyleBackColor = false;
             this.c66.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c65
             // 
+            this.c65.BackColor = System.Drawing.Color.LightBlue;
             this.c65.Location = new System.Drawing.Point(160, 204);
             this.c65.Margin = new System.Windows.Forms.Padding(0);
             this.c65.Name = "c65";
             this.c65.Size = new System.Drawing.Size(35, 35);
             this.c65.TabIndex = 44;
-            this.c65.UseVisualStyleBackColor = true;
+            this.c65.UseVisualStyleBackColor = false;
             this.c65.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c64
             // 
+            this.c64.BackColor = System.Drawing.Color.LightBlue;
             this.c64.Location = new System.Drawing.Point(125, 204);
             this.c64.Margin = new System.Windows.Forms.Padding(0);
             this.c64.Name = "c64";
             this.c64.Size = new System.Drawing.Size(35, 35);
             this.c64.TabIndex = 43;
-            this.c64.UseVisualStyleBackColor = true;
+            this.c64.UseVisualStyleBackColor = false;
             this.c64.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c63
             // 
+            this.c63.BackColor = System.Drawing.Color.LightBlue;
             this.c63.Location = new System.Drawing.Point(90, 204);
             this.c63.Margin = new System.Windows.Forms.Padding(0);
             this.c63.Name = "c63";
             this.c63.Size = new System.Drawing.Size(35, 35);
             this.c63.TabIndex = 42;
-            this.c63.UseVisualStyleBackColor = true;
+            this.c63.UseVisualStyleBackColor = false;
             this.c63.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c62
             // 
+            this.c62.BackColor = System.Drawing.Color.LightBlue;
             this.c62.Location = new System.Drawing.Point(55, 204);
             this.c62.Margin = new System.Windows.Forms.Padding(0);
             this.c62.Name = "c62";
             this.c62.Size = new System.Drawing.Size(35, 35);
             this.c62.TabIndex = 41;
-            this.c62.UseVisualStyleBackColor = true;
+            this.c62.UseVisualStyleBackColor = false;
             this.c62.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c61
             // 
+            this.c61.BackColor = System.Drawing.Color.LightBlue;
             this.c61.Location = new System.Drawing.Point(20, 204);
             this.c61.Margin = new System.Windows.Forms.Padding(0);
             this.c61.Name = "c61";
             this.c61.Size = new System.Drawing.Size(35, 35);
             this.c61.TabIndex = 40;
-            this.c61.UseVisualStyleBackColor = true;
+            this.c61.UseVisualStyleBackColor = false;
             this.c61.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c58
             // 
+            this.c58.BackColor = System.Drawing.Color.LightBlue;
             this.c58.Location = new System.Drawing.Point(265, 169);
             this.c58.Margin = new System.Windows.Forms.Padding(0);
             this.c58.Name = "c58";
             this.c58.Size = new System.Drawing.Size(35, 35);
             this.c58.TabIndex = 39;
-            this.c58.UseVisualStyleBackColor = true;
+            this.c58.UseVisualStyleBackColor = false;
             this.c58.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c57
             // 
+            this.c57.BackColor = System.Drawing.Color.LightBlue;
             this.c57.Location = new System.Drawing.Point(230, 169);
             this.c57.Margin = new System.Windows.Forms.Padding(0);
             this.c57.Name = "c57";
             this.c57.Size = new System.Drawing.Size(35, 35);
             this.c57.TabIndex = 38;
-            this.c57.UseVisualStyleBackColor = true;
+            this.c57.UseVisualStyleBackColor = false;
             this.c57.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c56
             // 
+            this.c56.BackColor = System.Drawing.Color.LightBlue;
             this.c56.Location = new System.Drawing.Point(195, 169);
             this.c56.Margin = new System.Windows.Forms.Padding(0);
             this.c56.Name = "c56";
             this.c56.Size = new System.Drawing.Size(35, 35);
             this.c56.TabIndex = 37;
-            this.c56.UseVisualStyleBackColor = true;
+            this.c56.UseVisualStyleBackColor = false;
             this.c56.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c55
             // 
+            this.c55.BackColor = System.Drawing.Color.LightBlue;
             this.c55.Location = new System.Drawing.Point(160, 169);
             this.c55.Margin = new System.Windows.Forms.Padding(0);
             this.c55.Name = "c55";
             this.c55.Size = new System.Drawing.Size(35, 35);
             this.c55.TabIndex = 36;
-            this.c55.UseVisualStyleBackColor = true;
+            this.c55.UseVisualStyleBackColor = false;
             this.c55.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c54
             // 
+            this.c54.BackColor = System.Drawing.Color.LightBlue;
             this.c54.Location = new System.Drawing.Point(125, 169);
             this.c54.Margin = new System.Windows.Forms.Padding(0);
             this.c54.Name = "c54";
             this.c54.Size = new System.Drawing.Size(35, 35);
             this.c54.TabIndex = 35;
-            this.c54.UseVisualStyleBackColor = true;
+            this.c54.UseVisualStyleBackColor = false;
             this.c54.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c53
             // 
+            this.c53.BackColor = System.Drawing.Color.LightBlue;
             this.c53.Location = new System.Drawing.Point(90, 169);
             this.c53.Margin = new System.Windows.Forms.Padding(0);
             this.c53.Name = "c53";
             this.c53.Size = new System.Drawing.Size(35, 35);
             this.c53.TabIndex = 34;
-            this.c53.UseVisualStyleBackColor = true;
+            this.c53.UseVisualStyleBackColor = false;
             this.c53.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c52
             // 
+            this.c52.BackColor = System.Drawing.Color.LightBlue;
             this.c52.Location = new System.Drawing.Point(55, 169);
             this.c52.Margin = new System.Windows.Forms.Padding(0);
             this.c52.Name = "c52";
             this.c52.Size = new System.Drawing.Size(35, 35);
             this.c52.TabIndex = 33;
-            this.c52.UseVisualStyleBackColor = true;
+            this.c52.UseVisualStyleBackColor = false;
             this.c52.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c51
             // 
+            this.c51.BackColor = System.Drawing.Color.LightBlue;
             this.c51.Location = new System.Drawing.Point(20, 169);
             this.c51.Margin = new System.Windows.Forms.Padding(0);
             this.c51.Name = "c51";
             this.c51.Size = new System.Drawing.Size(35, 35);
             this.c51.TabIndex = 32;
-            this.c51.UseVisualStyleBackColor = true;
+            this.c51.UseVisualStyleBackColor = false;
             this.c51.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c48
             // 
+            this.c48.BackColor = System.Drawing.Color.LightBlue;
             this.c48.Location = new System.Drawing.Point(265, 134);
             this.c48.Margin = new System.Windows.Forms.Padding(0);
             this.c48.Name = "c48";
             this.c48.Size = new System.Drawing.Size(35, 35);
             this.c48.TabIndex = 31;
-            this.c48.UseVisualStyleBackColor = true;
+            this.c48.UseVisualStyleBackColor = false;
             this.c48.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c47
             // 
+            this.c47.BackColor = System.Drawing.Color.LightBlue;
             this.c47.Location = new System.Drawing.Point(230, 134);
             this.c47.Margin = new System.Windows.Forms.Padding(0);
             this.c47.Name = "c47";
             this.c47.Size = new System.Drawing.Size(35, 35);
             this.c47.TabIndex = 30;
-            this.c47.UseVisualStyleBackColor = true;
+            this.c47.UseVisualStyleBackColor = false;
             this.c47.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c46
             // 
+            this.c46.BackColor = System.Drawing.Color.LightBlue;
             this.c46.Location = new System.Drawing.Point(195, 134);
             this.c46.Margin = new System.Windows.Forms.Padding(0);
             this.c46.Name = "c46";
             this.c46.Size = new System.Drawing.Size(35, 35);
             this.c46.TabIndex = 29;
-            this.c46.UseVisualStyleBackColor = true;
+            this.c46.UseVisualStyleBackColor = false;
             this.c46.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c45
             // 
+            this.c45.BackColor = System.Drawing.Color.LightBlue;
             this.c45.Location = new System.Drawing.Point(160, 134);
             this.c45.Margin = new System.Windows.Forms.Padding(0);
             this.c45.Name = "c45";
             this.c45.Size = new System.Drawing.Size(35, 35);
             this.c45.TabIndex = 28;
-            this.c45.UseVisualStyleBackColor = true;
+            this.c45.UseVisualStyleBackColor = false;
             this.c45.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c44
             // 
+            this.c44.BackColor = System.Drawing.Color.LightBlue;
             this.c44.Location = new System.Drawing.Point(125, 134);
             this.c44.Margin = new System.Windows.Forms.Padding(0);
             this.c44.Name = "c44";
             this.c44.Size = new System.Drawing.Size(35, 35);
             this.c44.TabIndex = 27;
-            this.c44.UseVisualStyleBackColor = true;
+            this.c44.UseVisualStyleBackColor = false;
             this.c44.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c43
             // 
+            this.c43.BackColor = System.Drawing.Color.LightBlue;
             this.c43.Location = new System.Drawing.Point(90, 134);
             this.c43.Margin = new System.Windows.Forms.Padding(0);
             this.c43.Name = "c43";
             this.c43.Size = new System.Drawing.Size(35, 35);
             this.c43.TabIndex = 26;
-            this.c43.UseVisualStyleBackColor = true;
+            this.c43.UseVisualStyleBackColor = false;
             this.c43.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c42
             // 
+            this.c42.BackColor = System.Drawing.Color.LightBlue;
             this.c42.Location = new System.Drawing.Point(55, 134);
             this.c42.Margin = new System.Windows.Forms.Padding(0);
             this.c42.Name = "c42";
             this.c42.Size = new System.Drawing.Size(35, 35);
             this.c42.TabIndex = 25;
-            this.c42.UseVisualStyleBackColor = true;
+            this.c42.UseVisualStyleBackColor = false;
             this.c42.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c41
             // 
+            this.c41.BackColor = System.Drawing.Color.LightBlue;
             this.c41.Location = new System.Drawing.Point(20, 134);
             this.c41.Margin = new System.Windows.Forms.Padding(0);
             this.c41.Name = "c41";
             this.c41.Size = new System.Drawing.Size(35, 35);
             this.c41.TabIndex = 24;
-            this.c41.UseVisualStyleBackColor = true;
+            this.c41.UseVisualStyleBackColor = false;
             this.c41.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c38
             // 
+            this.c38.BackColor = System.Drawing.Color.LightBlue;
             this.c38.Location = new System.Drawing.Point(265, 99);
             this.c38.Margin = new System.Windows.Forms.Padding(0);
             this.c38.Name = "c38";
             this.c38.Size = new System.Drawing.Size(35, 35);
             this.c38.TabIndex = 23;
-            this.c38.UseVisualStyleBackColor = true;
+            this.c38.UseVisualStyleBackColor = false;
             this.c38.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c37
             // 
+            this.c37.BackColor = System.Drawing.Color.LightBlue;
             this.c37.Location = new System.Drawing.Point(230, 99);
             this.c37.Margin = new System.Windows.Forms.Padding(0);
             this.c37.Name = "c37";
             this.c37.Size = new System.Drawing.Size(35, 35);
             this.c37.TabIndex = 22;
-            this.c37.UseVisualStyleBackColor = true;
+            this.c37.UseVisualStyleBackColor = false;
             this.c37.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c36
             // 
+            this.c36.BackColor = System.Drawing.Color.LightBlue;
             this.c36.Location = new System.Drawing.Point(195, 99);
             this.c36.Margin = new System.Windows.Forms.Padding(0);
             this.c36.Name = "c36";
             this.c36.Size = new System.Drawing.Size(35, 35);
             this.c36.TabIndex = 21;
-            this.c36.UseVisualStyleBackColor = true;
+            this.c36.UseVisualStyleBackColor = false;
             this.c36.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c35
             // 
+            this.c35.BackColor = System.Drawing.Color.LightBlue;
             this.c35.Location = new System.Drawing.Point(160, 99);
             this.c35.Margin = new System.Windows.Forms.Padding(0);
             this.c35.Name = "c35";
             this.c35.Size = new System.Drawing.Size(35, 35);
             this.c35.TabIndex = 20;
-            this.c35.UseVisualStyleBackColor = true;
+            this.c35.UseVisualStyleBackColor = false;
             this.c35.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c34
             // 
+            this.c34.BackColor = System.Drawing.Color.LightBlue;
             this.c34.Location = new System.Drawing.Point(125, 99);
             this.c34.Margin = new System.Windows.Forms.Padding(0);
             this.c34.Name = "c34";
             this.c34.Size = new System.Drawing.Size(35, 35);
             this.c34.TabIndex = 19;
-            this.c34.UseVisualStyleBackColor = true;
+            this.c34.UseVisualStyleBackColor = false;
             this.c34.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c33
             // 
+            this.c33.BackColor = System.Drawing.Color.LightBlue;
             this.c33.Location = new System.Drawing.Point(90, 99);
             this.c33.Margin = new System.Windows.Forms.Padding(0);
             this.c33.Name = "c33";
             this.c33.Size = new System.Drawing.Size(35, 35);
             this.c33.TabIndex = 18;
-            this.c33.UseVisualStyleBackColor = true;
+            this.c33.UseVisualStyleBackColor = false;
             this.c33.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c32
             // 
+            this.c32.BackColor = System.Drawing.Color.LightBlue;
             this.c32.Location = new System.Drawing.Point(55, 99);
             this.c32.Margin = new System.Windows.Forms.Padding(0);
             this.c32.Name = "c32";
             this.c32.Size = new System.Drawing.Size(35, 35);
             this.c32.TabIndex = 17;
-            this.c32.UseVisualStyleBackColor = true;
+            this.c32.UseVisualStyleBackColor = false;
             this.c32.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c31
             // 
+            this.c31.BackColor = System.Drawing.Color.LightBlue;
             this.c31.Location = new System.Drawing.Point(20, 99);
             this.c31.Margin = new System.Windows.Forms.Padding(0);
             this.c31.Name = "c31";
             this.c31.Size = new System.Drawing.Size(35, 35);
             this.c31.TabIndex = 16;
-            this.c31.UseVisualStyleBackColor = true;
+            this.c31.UseVisualStyleBackColor = false;
             this.c31.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c28
             // 
+            this.c28.BackColor = System.Drawing.Color.LightBlue;
             this.c28.Location = new System.Drawing.Point(265, 64);
             this.c28.Margin = new System.Windows.Forms.Padding(0);
             this.c28.Name = "c28";
             this.c28.Size = new System.Drawing.Size(35, 35);
             this.c28.TabIndex = 15;
-            this.c28.UseVisualStyleBackColor = true;
+            this.c28.UseVisualStyleBackColor = false;
             this.c28.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c27
             // 
+            this.c27.BackColor = System.Drawing.Color.LightBlue;
             this.c27.Location = new System.Drawing.Point(230, 64);
             this.c27.Margin = new System.Windows.Forms.Padding(0);
             this.c27.Name = "c27";
             this.c27.Size = new System.Drawing.Size(35, 35);
             this.c27.TabIndex = 14;
-            this.c27.UseVisualStyleBackColor = true;
+            this.c27.UseVisualStyleBackColor = false;
             this.c27.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c26
             // 
+            this.c26.BackColor = System.Drawing.Color.LightBlue;
             this.c26.Location = new System.Drawing.Point(195, 64);
             this.c26.Margin = new System.Windows.Forms.Padding(0);
             this.c26.Name = "c26";
             this.c26.Size = new System.Drawing.Size(35, 35);
             this.c26.TabIndex = 13;
-            this.c26.UseVisualStyleBackColor = true;
+            this.c26.UseVisualStyleBackColor = false;
             this.c26.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c25
             // 
+            this.c25.BackColor = System.Drawing.Color.LightBlue;
             this.c25.Location = new System.Drawing.Point(160, 64);
             this.c25.Margin = new System.Windows.Forms.Padding(0);
             this.c25.Name = "c25";
             this.c25.Size = new System.Drawing.Size(35, 35);
             this.c25.TabIndex = 12;
-            this.c25.UseVisualStyleBackColor = true;
+            this.c25.UseVisualStyleBackColor = false;
             this.c25.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c24
             // 
+            this.c24.BackColor = System.Drawing.Color.LightBlue;
             this.c24.Location = new System.Drawing.Point(125, 64);
             this.c24.Margin = new System.Windows.Forms.Padding(0);
             this.c24.Name = "c24";
             this.c24.Size = new System.Drawing.Size(35, 35);
             this.c24.TabIndex = 11;
-            this.c24.UseVisualStyleBackColor = true;
+            this.c24.UseVisualStyleBackColor = false;
             this.c24.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c23
             // 
+            this.c23.BackColor = System.Drawing.Color.LightBlue;
             this.c23.Location = new System.Drawing.Point(90, 64);
             this.c23.Margin = new System.Windows.Forms.Padding(0);
             this.c23.Name = "c23";
             this.c23.Size = new System.Drawing.Size(35, 35);
             this.c23.TabIndex = 10;
-            this.c23.UseVisualStyleBackColor = true;
+            this.c23.UseVisualStyleBackColor = false;
             this.c23.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c22
             // 
+            this.c22.BackColor = System.Drawing.Color.LightBlue;
             this.c22.Location = new System.Drawing.Point(55, 64);
             this.c22.Margin = new System.Windows.Forms.Padding(0);
             this.c22.Name = "c22";
             this.c22.Size = new System.Drawing.Size(35, 35);
             this.c22.TabIndex = 9;
-            this.c22.UseVisualStyleBackColor = true;
+            this.c22.UseVisualStyleBackColor = false;
             this.c22.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c21
             // 
+            this.c21.BackColor = System.Drawing.Color.LightBlue;
             this.c21.Location = new System.Drawing.Point(20, 64);
             this.c21.Margin = new System.Windows.Forms.Padding(0);
             this.c21.Name = "c21";
             this.c21.Size = new System.Drawing.Size(35, 35);
             this.c21.TabIndex = 8;
-            this.c21.UseVisualStyleBackColor = true;
+            this.c21.UseVisualStyleBackColor = false;
             this.c21.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c18
             // 
+            this.c18.BackColor = System.Drawing.Color.LightBlue;
             this.c18.Location = new System.Drawing.Point(265, 29);
             this.c18.Margin = new System.Windows.Forms.Padding(0);
             this.c18.Name = "c18";
             this.c18.Size = new System.Drawing.Size(35, 35);
             this.c18.TabIndex = 7;
-            this.c18.UseVisualStyleBackColor = true;
+            this.c18.UseVisualStyleBackColor = false;
             this.c18.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c17
             // 
+            this.c17.BackColor = System.Drawing.Color.LightBlue;
             this.c17.Location = new System.Drawing.Point(230, 29);
             this.c17.Margin = new System.Windows.Forms.Padding(0);
             this.c17.Name = "c17";
             this.c17.Size = new System.Drawing.Size(35, 35);
             this.c17.TabIndex = 6;
-            this.c17.UseVisualStyleBackColor = true;
+            this.c17.UseVisualStyleBackColor = false;
             this.c17.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c16
             // 
+            this.c16.BackColor = System.Drawing.Color.LightBlue;
             this.c16.Location = new System.Drawing.Point(195, 29);
             this.c16.Margin = new System.Windows.Forms.Padding(0);
             this.c16.Name = "c16";
             this.c16.Size = new System.Drawing.Size(35, 35);
             this.c16.TabIndex = 5;
-            this.c16.UseVisualStyleBackColor = true;
+            this.c16.UseVisualStyleBackColor = false;
             this.c16.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c15
             // 
+            this.c15.BackColor = System.Drawing.Color.LightBlue;
             this.c15.Location = new System.Drawing.Point(160, 29);
             this.c15.Margin = new System.Windows.Forms.Padding(0);
             this.c15.Name = "c15";
             this.c15.Size = new System.Drawing.Size(35, 35);
             this.c15.TabIndex = 4;
-            this.c15.UseVisualStyleBackColor = true;
+            this.c15.UseVisualStyleBackColor = false;
             this.c15.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c14
             // 
+            this.c14.BackColor = System.Drawing.Color.LightBlue;
             this.c14.Location = new System.Drawing.Point(125, 29);
             this.c14.Margin = new System.Windows.Forms.Padding(0);
             this.c14.Name = "c14";
             this.c14.Size = new System.Drawing.Size(35, 35);
             this.c14.TabIndex = 3;
-            this.c14.UseVisualStyleBackColor = true;
+            this.c14.UseVisualStyleBackColor = false;
             this.c14.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c13
             // 
+            this.c13.BackColor = System.Drawing.Color.LightBlue;
             this.c13.Location = new System.Drawing.Point(90, 29);
             this.c13.Margin = new System.Windows.Forms.Padding(0);
             this.c13.Name = "c13";
             this.c13.Size = new System.Drawing.Size(35, 35);
             this.c13.TabIndex = 2;
-            this.c13.UseVisualStyleBackColor = true;
+            this.c13.UseVisualStyleBackColor = false;
             this.c13.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c12
             // 
+            this.c12.BackColor = System.Drawing.Color.LightBlue;
             this.c12.Location = new System.Drawing.Point(55, 29);
             this.c12.Margin = new System.Windows.Forms.Padding(0);
             this.c12.Name = "c12";
             this.c12.Size = new System.Drawing.Size(35, 35);
             this.c12.TabIndex = 1;
-            this.c12.UseVisualStyleBackColor = true;
+            this.c12.UseVisualStyleBackColor = false;
             this.c12.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // c11
             // 
+            this.c11.BackColor = System.Drawing.Color.LightBlue;
             this.c11.Location = new System.Drawing.Point(20, 29);
             this.c11.Margin = new System.Windows.Forms.Padding(0);
             this.c11.Name = "c11";
             this.c11.Size = new System.Drawing.Size(35, 35);
             this.c11.TabIndex = 0;
-            this.c11.UseVisualStyleBackColor = true;
+            this.c11.UseVisualStyleBackColor = false;
             this.c11.Click += new System.EventHandler(this.comGridField_Hit);
             // 
             // computer
             // 
             this.computer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.computer.ForeColor = System.Drawing.SystemColors.Info;
-            this.computer.Location = new System.Drawing.Point(441, 145);
+            this.computer.Location = new System.Drawing.Point(429, 145);
             this.computer.Name = "computer";
             this.computer.ReadOnly = true;
             this.computer.Size = new System.Drawing.Size(210, 20);
@@ -2046,9 +2168,11 @@
             // 
             this.turnBox.BackColor = System.Drawing.Color.DarkGray;
             this.turnBox.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.turnBox.Location = new System.Drawing.Point(302, 145);
+            this.turnBox.Location = new System.Drawing.Point(277, 104);
+            this.turnBox.Multiline = true;
             this.turnBox.Name = "turnBox";
-            this.turnBox.Size = new System.Drawing.Size(111, 20);
+            this.turnBox.ReadOnly = true;
+            this.turnBox.Size = new System.Drawing.Size(153, 32);
             this.turnBox.TabIndex = 83;
             this.turnBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2060,26 +2184,57 @@
             // timerBox
             // 
             this.timerBox.BackColor = System.Drawing.SystemColors.MenuText;
+            this.timerBox.Font = new System.Drawing.Font("Digital-7", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timerBox.ForeColor = System.Drawing.Color.Red;
-            this.timerBox.Location = new System.Drawing.Point(306, 56);
+            this.timerBox.Location = new System.Drawing.Point(277, 23);
             this.timerBox.Name = "timerBox";
-            this.timerBox.Size = new System.Drawing.Size(100, 20);
+            this.timerBox.ReadOnly = true;
+            this.timerBox.Size = new System.Drawing.Size(153, 39);
             this.timerBox.TabIndex = 84;
             this.timerBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 200;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // resetButton
+            // 
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(196, 23);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(75, 23);
+            this.resetButton.TabIndex = 85;
+            this.resetButton.Text = "Рестарт";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(436, 23);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 86;
+            this.saveButton.Text = "Зачувај";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::Battleship_v1.Properties.Resources.main_background1;
             this.ClientSize = new System.Drawing.Size(707, 504);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.timerBox);
             this.Controls.Add(this.turnBox);
             this.Controls.Add(this.username);
             this.Controls.Add(this.computer);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(723, 542);
             this.MinimumSize = new System.Drawing.Size(723, 542);
@@ -2095,8 +2250,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button u88;
         private System.Windows.Forms.Button u87;
@@ -2264,6 +2417,9 @@
         private System.Windows.Forms.TextBox turnBox;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox timerBox;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 
