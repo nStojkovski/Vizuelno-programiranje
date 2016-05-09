@@ -1,0 +1,32 @@
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe.config
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\bin\Debug\Battleship v1.pdb
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Form1.resources
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Properties.Resources.resources
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csproj.GenerateResource.Cache
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship v1.exe
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship v1.pdb
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csprojResolveAssemblyReference.cache
+c:\users\niko\documents\visual studio 2015\Projects\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Username.resources
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe.config
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship v1.exe
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship v1.pdb
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\bin\Debug\Battleship v1.pdb
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csprojResolveAssemblyReference.cache
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Form1.resources
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Properties.Resources.resources
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Username.resources
+C:\Users\kate\Desktop\проект вп\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csproj.GenerateResource.Cache
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe.config
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship v1.exe
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship v1.pdb
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\bin\Debug\Battleship v1.exe
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\bin\Debug\Battleship v1.pdb
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csprojResolveAssemblyReference.cache
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Form1.resources
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Properties.Resources.resources
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Username.resources
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship v1.csproj.GenerateResource.Cache
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.Home.resources
+C:\Users\Niko\GitHub\Battleship v1\Battleship v1\obj\Debug\Battleship_v1.SelectShips.resources
